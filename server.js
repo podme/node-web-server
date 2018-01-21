@@ -15,7 +15,10 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
 	// res.send('About page');
-	res.render('about.hbs');
+	res.render('about.hbs', {
+		pageTitle : 'About Page',
+		currYear : new Date().getFullYear()
+	});
 });
 app.listen(3000, () => {
 	console.log('listening on port 3000');
