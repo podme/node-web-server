@@ -1,0 +1,21 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{pageTitle}}</title>
+	</head>
+	<body>
+		{{> header}}
+		<p>{{screamIt welcomeMsg}}</p>
+		<h2>Heloo, my name is {{name}}</h2>
+		<p>My interests include: </p>
+		<ul>
+			{{#each likes}}
+				<li>{{this}}</li>
+			{{/each}}
+		</ul>
+			
+		<!-- to inject a template partial, use the '>' sign -->
+		{{> footer}}
+	</body>
+</html>

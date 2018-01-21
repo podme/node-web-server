@@ -5,10 +5,9 @@
 		<title>About Page</title>
 	</head>
 	<body>
-		<h1>{{pageTitle}}</h1>
+		{{> header}}
 		<p>Some text here.</p>
-		<footer>
-			<p>Copyright {{currYear}}</p>
-		</footer>
+		<!-- to inject a template partial, use the '>' sign -->
+		{{> footer}}
 	</body>
 </html>
