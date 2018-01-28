@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
 	res.render('home.hbs', {
 		pageTitle : 'Home Page',
 		name: 'Paul',
-		likes: ['music', 'programming', 'cycling'],
+		likes: ['programming', 'music', 'cycling'],
 		welcomeMsg : 'Welcome!'
 	});
 });
